@@ -40,10 +40,14 @@
                 </td>
                 <td>
                     <a href='<c:url value="/user/delete?id=${user.id}"/>'>delete</a>
-                    edycja pokaż
                 </td>
+<%--                <td>--%>
+<%--                    <a href='<c:url value="/user/edit?id=${user.id}"/>'>edycja</a>--%>
+<%--                </td>--%>
+<%--                <td>--%>
+<%--                    <a href='<c:url value="/user/show?id=${user.id}"/>'>pokaż</a>--%>
+<%--                </td>--%>
             </tr>
-
         </c:forEach>
         </tbody>
     </table>
