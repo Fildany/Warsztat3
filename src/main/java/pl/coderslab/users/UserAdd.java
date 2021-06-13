@@ -24,6 +24,8 @@ public class UserAdd extends HttpServlet {
         user.setPassword(req.getParameter("userPassword"));
 
         userDao.addUser(user);
+        resp.sendRedirect(req.getContextPath() + "/user/list");
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
